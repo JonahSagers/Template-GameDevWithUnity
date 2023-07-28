@@ -30,7 +30,7 @@ public class Move : MonoBehaviour
         //artifical drag, so that movement feels snappier
         rb.velocity = Vector3.Scale(rb.velocity, new Vector3(0.95f,1,0.95f));
         //camera
-        transform.RotateAround(transform.position, Vector3.up, Input.GetAxis("Mouse X"));
-        cam.transform.rotation = Quaternion.Euler(cam.transform.eulerAngles.x - Input.GetAxis("Mouse Y"), transform.eulerAngles.y, transform.eulerAngles.z);
+        transform.RotateAround(transform.position, Vector3.up, Input.GetAxis("Mouse X") * Time.deltaTime * 70);
+        cam.transform.rotation = Quaternion.Euler(cam.transform.eulerAngles.x - (Input.GetAxis("Mouse Y") * Time.deltaTime * 125), transform.eulerAngles.y, transform.eulerAngles.z);
     }
 }
