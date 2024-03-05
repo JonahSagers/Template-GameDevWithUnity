@@ -5125,31 +5125,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &567965790 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8784527079721689308, guid: 1c86b2ed6b310cd4584524973a2eee39, type: 3}
-  m_PrefabInstance: {fileID: 1818287430}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &567965791 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 1383334994074162787, guid: 1c86b2ed6b310cd4584524973a2eee39, type: 3}
-  m_PrefabInstance: {fileID: 1818287430}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &567965793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 567965790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6871bd858b25c040a479c403e90ce8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocity: 2
-  render: {fileID: 567965791}
-  opacity: 0
 --- !u!50 &734352096
 Rigidbody2D:
   serializedVersion: 4
@@ -5196,6 +5171,7 @@ MonoBehaviour:
   particles: {fileID: 479539364}
   dashCD: 0
   mousePosition: {x: 0, y: 0, z: 0}
+  afterimage: {fileID: 8784527079721689308, guid: 1c86b2ed6b310cd4584524973a2eee39, type: 3}
 --- !u!58 &734352101
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6500,66 +6476,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &1818287430
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5401350508838470871, guid: 1c86b2ed6b310cd4584524973a2eee39, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.4568753
-      objectReference: {fileID: 0}
-    - target: {fileID: 5401350508838470871, guid: 1c86b2ed6b310cd4584524973a2eee39, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -5.7199974
-      objectReference: {fileID: 0}
-    - target: {fileID: 5401350508838470871, guid: 1c86b2ed6b310cd4584524973a2eee39, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5401350508838470871, guid: 1c86b2ed6b310cd4584524973a2eee39, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5401350508838470871, guid: 1c86b2ed6b310cd4584524973a2eee39, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5401350508838470871, guid: 1c86b2ed6b310cd4584524973a2eee39, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5401350508838470871, guid: 1c86b2ed6b310cd4584524973a2eee39, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5401350508838470871, guid: 1c86b2ed6b310cd4584524973a2eee39, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5401350508838470871, guid: 1c86b2ed6b310cd4584524973a2eee39, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5401350508838470871, guid: 1c86b2ed6b310cd4584524973a2eee39, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8784527079721689308, guid: 1c86b2ed6b310cd4584524973a2eee39, type: 3}
-      propertyPath: m_Name
-      value: Hexagon Flat-Top (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8784527079721689308, guid: 1c86b2ed6b310cd4584524973a2eee39, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 567965793}
-  m_SourcePrefab: {fileID: 100100000, guid: 1c86b2ed6b310cd4584524973a2eee39, type: 3}
 --- !u!212 &3065026531730499130
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6626,7 +6542,7 @@ GameObject:
   - component: {fileID: 734352096}
   - component: {fileID: 734352101}
   m_Layer: 0
-  m_Name: Hexagon Flat-Top
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6655,4 +6571,3 @@ SceneRoots:
   - {fileID: 479539362}
   - {fileID: 519420032}
   - {fileID: 1388956445}
-  - {fileID: 1818287430}
